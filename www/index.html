@@ -16,47 +16,101 @@
 				<div class="item_right">200/200</div>
 			</div>
 			<div class="head_block_item">
-				<div class="item_left">OД</div>
-				<div class="item_right">80/80</div>
+				<div id="battery_level_pic" class="item_left"></div>
+				<div id="battery_level" class="item_right">80/100</div>
 			</div>
 			<div class="head_block_item">
 				<div class="item_left">OO</div>
-				<div class="item_right">21:30</div>
+				<div id="now_time" class="item_right">21:30</div>
 			</div>
 		</div>
 		<div class="main_block">
-			<div id="id_status" class="main_body_block">
-				
+			<div id="id_status" class="main_body_block main_body_block_active" data-pic="1"></div>
+			<div id="id_special2" class="main_body_block no_active" data-pic="2">
+				<div id="model1">
+					<script type="text/template" id="id_special">
+						<div class="special_left_block">
+							<ul>
+								<li><span><%= force.title %></span><span><%= force.count %></span></li>
+								<li><span><%= perception.title %></span><span><%= perception.count %></span></li>
+								<li><span><%= endurance.title %></span><span><%= endurance.count %></span></li>
+								<li><span><%= charisma.title %></span><span><%= charisma.count %></span></li>
+								<li><span><%= intelligence.title %></span><span><%= intelligence.count %></span></li>
+								<li><span><%= agility.title %></span><span><%= agility.count %></span></li>
+								<li><span><%= luck.title %></span><span><%= luck.count %></span></li>
+							</ul>
+						</div>
+						<div class="special_right_block">
+							<div class="right_block_top"></div>
+							<div class="right_block_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, deserunt, adipisci nostrum asperiores suscipit optio reprehenderit nemo similique cum harum nulla vitae. Unde, placeat, doloremque id necessitatibus odio neque alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, deserunt, adipisci nostrum asperiores suscipit optio reprehenderit nemo similique cum harum nulla vitae. Unde, placeat, doloremque id necessitatibus odio neque alias.</div>
+						</div>
+					</script>
+				</div>
 			</div>
-			<div id="id_special" class="main_body_block">
-				
+			<div id="id_skills2" class="main_body_block no_active" data-pic="3">
+				<div id="model2">
+					<script type="text/template" id="id_skills">
+						<div class="skills_left_block">
+							<ul>
+								<li><span><%= Barter.title %></span><span><%= Barter.count %></span></li>
+								<li><span><%= unarmed.title %></span><span><%= unarmed.count %></span></li>
+								<li><span><%= Hacking.title %></span><span><%= Hacking.count %></span></li>
+								<li><span><%= Explosives.title %></span><span><%= Explosives.count %></span></li>
+								<li><span><%= Survival.title %></span><span><%= Survival.count %></span></li>
+								<li><span><%= Eloquence.title %></span><span><%= Eloquence.count %></span></li>
+								<li><span><%= Medicine.title %></span><span><%= Medicine.count %></span></li>
+								<li><span><%= Science.title %></span><span><%= Science.count %></span></li>
+								<li><span><%= Weapons.title %></span><span><%= Weapons.count %></span></li>
+							</ul>
+						</div>
+						<div class="skills_right_block">
+							<div class="right_block_top"></div>
+							<div class="right_block_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, deserunt, adipisci nostrum asperiores suscipit optio reprehenderit nemo similique cum harum nulla vitae. Unde, placeat, doloremque id necessitatibus odio neque alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, deserunt, adipisci nostrum asperiores suscipit optio reprehenderit nemo similique cum harum nulla vitae. Unde, placeat, doloremque id necessitatibus odio neque alias.</div>
+						</div>
+					</script>
+				</div>
 			</div>
-			<div id="id_skills" class="main_body_block no_active">
-				
+			<div id="id_perks2" class="main_body_block no_active" data-pic="4">
+				<div id="model3">
+					<script type="text/template" id="id_perks">
+						<div class="perks_left_block">
+							<ul>
+								<li><span><%= Barter.title %></span><span><%= Barter.count %></span></li>
+								<li><span><%= unarmed.title %></span><span><%= unarmed.count %></span></li>
+								<li><span><%= Hacking.title %></span><span><%= Hacking.count %></span></li>
+								<li><span><%= Explosives.title %></span><span><%= Explosives.count %></span></li>
+								<li><span><%= Survival.title %></span><span><%= Survival.count %></span></li>
+								<li><span><%= Eloquence.title %></span><span><%= Eloquence.count %></span></li>
+								<li><span><%= Medicine.title %></span><span><%= Medicine.count %></span></li>
+								<li><span><%= Science.title %></span><span><%= Science.count %></span></li>
+								<li><span><%= Weapons.title %></span><span><%= Weapons.count %></span></li>
+							</ul>
+						</div>
+						<div class="perks_right_block">
+							<div class="right_block_top"></div>
+							<div class="right_block_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, deserunt, adipisci nostrum asperiores suscipit optio reprehenderit nemo similique cum harum nulla vitae. Unde, placeat, doloremque id necessitatibus odio neque alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, deserunt, adipisci nostrum asperiores suscipit optio reprehenderit nemo similique cum harum nulla vitae. Unde, placeat, doloremque id necessitatibus odio neque alias.</div>
+						</div>
+					</script>
+				</div>
 			</div>
-			<div id="id_perks" class="main_body_block no_active">
-				
-			</div>
-			<div id="id_others" class="main_body_block no_active">
-				
-			</div>
+			<div id="id_others" class="main_body_block no_active" data-pic="5"></div>
 		</div>
 		<div class="main_down_block">
 			<div class="down_abs_block">
 				<div class="down_block_item">
-					<div class="id_status block_item block_item_active touched">Статус</div>
+					<div data-num="1" class="id_status block_item block_item_active touched">Статус</div>
 				</div>
 				<div class="down_block_item">
-					<div class="id_special block_item touched">S.P.E.C.I.A.L</div>
+					<div data-num="2" class="id_special block_item touched">S.P.E.C.I.A.L</div>
 				</div>
 				<div class="down_block_item">
-					<div class="id_skills block_item touched">Навыки</div>
+					<div data-num="3" class="id_skills block_item touched">Навыки</div>
 				</div>
 				<div class="down_block_item">
-					<div class="id_perks block_item touched">Способности</div>
+					<div data-num="4" class="id_perks block_item touched">Способности</div>
 				</div>
 				<div class="down_block_item">
-					<div class="id_others block_item touched">Общая</div>
+					<div data-num="5" class="id_others block_item touched">Общая</div>
 				</div>
 			</div>
 		</div>

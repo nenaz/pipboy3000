@@ -1,0 +1,275 @@
+/*цвет рабки шапки, шрифта*/
+@head_color : rgb(0,254,122);
+@glob_height : 440px;
+
+.body_class{
+	background-image : url('IMAGE/background.jpg');
+	.main_block{
+		height : 444px;
+	}
+	#battery_level_pic{
+		background-image : url('IMAGE/battery2.png');
+		background-repeat : no-repeat;
+	}
+}
+
+.head_block_item{
+	display : inline-block;
+	width : 24%;
+	height : 40px;
+	border-top : 3px solid @head_color;
+	border-right : 3px solid @head_color;
+	margin-left : 3px;
+	div{
+		display : inline-block;
+		width : 47%;
+		font-size: 2em;
+		font-family: monospace;
+		/*margin: 2px;*/
+		color : @head_color;
+	}
+	.item_left{
+		text-align : left;
+		height : 100%;
+	}
+	.item_right{
+		text-align : right;
+		height : 100%;
+	}
+	.item_left,.item_right{
+		display : inline-block;
+		width : 40%;
+	}
+}
+
+.main_body_block{
+	background-repeat : no-repeat;
+	background-position-x : 50%;
+	background-position-y: 50%;
+	width : 100%;
+	/*width : 480px;*/
+	/*height : 440px;*/
+	height : 100%;
+}
+.main_body_block_active{
+	display : inline-block;
+}
+#id_status{
+	background-image : url('IMAGE/title-boy2.png');
+}
+#id_special{
+	background-image : url('IMAGE/title-boy-head2.png');
+	opacity : 10;
+}
+
+.no_active{
+	display : none;
+}
+.main_down_block{
+	border-right : 3px solid @head_color;
+	border-left : 3px solid @head_color;
+	height : 40px;
+	.down_abs_block{
+		position : relative;
+		display : inline-table;
+		width : 100%;
+		top : 21px;
+		.down_block_item{
+			display : table-cell;
+			text-align : center;
+			font-size: 2em;
+			font-family: monospace;
+			.block_item{
+				border : 3px solid transparent;
+				color : @head_color;
+				margin-right : 0;
+				margin-left : 14px;
+			}
+			.block_item_active{
+				border : 3px solid @head_color;
+			}
+		}
+		.down_block_item:before{
+			content : '_';
+			color : transparent;
+			background-position-y : 56%;
+			background-repeat-y : no-repeat;
+			background-image : url('IMAGE/line.png');
+			float : left;
+		}
+	}
+}
+#model1{
+	.special_left_block,
+	.special_right_block{
+		display : inline-block;
+		width : 49%;
+		height : @glob_height;
+	}
+	.special_left_block{
+		overflow-y : scroll;
+		overflow-x : hidden;
+		ul{
+			display : table;
+			list-style-type : none;
+			font-family: monospace;
+			color : @head_color;
+			font-size: 2em;
+			width : 100%;
+			margin : 0px;
+			li{
+				padding-top : 20px;
+				span{
+					display : inline-block;
+					width : 50%;
+				}
+			}
+		}
+	}
+	.special_right_block{
+		/*background-color : green;*/
+	}
+	.right_block_top{
+		/*background-color : black;*/
+		height : 70%;
+		background-image : url('IMAGE/perk_chemist2.png');
+		background-position-x: 50%;
+		background-repeat : no-repeat;
+	}
+	.right_block_bottom{
+		/*background-color : white;*/
+		height : 30%;
+		font-family: monospace;
+		color : @head_color;
+		font-size: 14px;
+	}
+}
+#model2{
+	.skills_left_block,
+	.skills_right_block{
+		display : inline-block;
+		width : 49%;
+		height : @glob_height;
+	}
+	.skills_left_block{
+		overflow-y : scroll;
+		overflow-x : hidden;
+		ul{
+			display : table;
+			list-style-type : none;
+			font-family: monospace;
+			color : @head_color;
+			font-size: 2em;
+			width : 100%;
+			margin : 0;
+			li{
+				padding-top : 20px;
+				span{
+					display : inline-block;
+					width : 50%;
+				}
+			}
+		}
+	}
+	.skills_right_block{
+		/*background-color : green;*/
+	}
+	.right_block_top{
+		/*background-color : black;*/
+		height : 70%;
+		background-image : url('IMAGE/perk_chemist2.png');
+		background-position-x: 50%;
+		background-repeat : no-repeat;
+	}
+	.right_block_bottom{
+		/*background-color : white;*/
+		height : 30%;
+		font-family: monospace;
+		color : @head_color;
+		font-size: 14px;
+	}
+}
+#model3{
+	.perks_left_block,
+	.perks_right_block{
+		display : inline-block;
+		width : 49%;
+		height : @glob_height;
+	}
+	.perks_left_block{
+		overflow-y : scroll;
+		overflow-x : hidden;
+		ul{
+			display : table;
+			list-style-type : none;
+			font-family: monospace;
+			color : @head_color;
+			font-size: 2em;
+			width : 100%;
+			margin : 0;
+			li{
+				padding-top : 20px;
+				span{
+					display : inline-block;
+					width : 50%;
+				}
+			}
+		}
+	}
+	.right_block_top{
+		/*background-color : black;*/
+		height : 70%;
+		background-image : url('IMAGE/perk_chemist2.png');
+		background-position-x: 50%;
+		background-repeat : no-repeat;
+	}
+	.right_block_bottom{
+		/*background-color : white;*/
+		height : 30%;
+		font-family: monospace;
+		color : @head_color;
+		font-size: 14px;
+	}
+}
+
+/* +++ animation +++ */
+@keyframes fadeInLeft {
+	from {
+		opacity: 1;
+	}
+	50%{
+		opacity : 0;
+	}
+	to {
+		opacity: 1;
+		background-image : url('IMAGE/title-boy-lh.png');
+		
+	}
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeOutLeft {
+	from {
+		opacity: 1;
+		transform: translate3d(0%,0,0);
+	}
+	to {
+		opacity: 0;
+		transform: translate3d(-100%,0,0);
+	}
+}
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+.animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* --- animation ---*/
